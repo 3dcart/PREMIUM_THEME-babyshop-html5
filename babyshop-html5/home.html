@@ -1,0 +1,119 @@
+<section id="home">
+    <!--START: home_carousel-->
+      <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
+      <script type="text/javascript" src="/assets/templates/common-html5/js/jquery.flexslider-min.js"></script>
+
+      <div id="homeCarousel" class="flexslider">
+        <ul class="slides">
+          <!--START: carousel-->
+          <li><a href="[link]"><img src="[image]" alt="" /></a></li>
+          <!--END: carousel-->
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+          jQuery(document).ready(function () {
+              jQuery('#homeCarousel').flexslider({
+                  animation: "[hc_effect]",
+                  slideshowSpeed: [hc_delay],
+                  controlNav: false,
+                  keyboard: false
+              });
+          });
+      </script>
+      <!--END: home_carousel-->
+<!--START: CATEGORY_HEADER-->
+<div class="category-header" id="homeHeader">[CONTENT]</div>
+<!--END: CATEGORY_HEADER--> 
+<!--START: FEATURE_MENU-->
+<div class="left-col col-lg-9">
+  <div class="group-img row block__collection">
+    <div class="block__collection-item col-md-6 col-sm-6 col-xs-12 banner-mid">
+        <a href="#" class="img-category" title="banner">
+          <img class="img-fluid" src="assets/images/img1.jpg" alt="">
+        </a>
+    </div>
+    <div class="block__collection-item col-md-6 col-sm-6 col-xs-12 banner-mid">
+        <a href="#" class="img-category" title="banner">
+            <img class="img-fluid" src="assets/images/img2.jpg" alt="">
+        </a>
+    </div>
+  </div>
+</div>
+
+<h2 class="header-specials">[category_Header-specials]</h2>
+<!--START: CATEGORY_ITEMS--> 
+<!--START: ITEM_TEMPLATE_0--> 
+<div class="product-item alternative">
+    <div class="product-meta">
+        <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
+        <div class="stars">
+        <!--START: product_review--> 
+        <!--START: product_review_average-->
+            <img src="assets/templates/babyshop-html5/images/star[review_average].png" alt="Average Rating" />
+            <div class="clear"></div>
+        <!--END: product_review_average--> 
+        <!--END: product_review-->
+        </div>
+    </div>
+    <div class="img">
+        <a href="product.asp?itemid=[catalogid]"><img class="img-responsive" src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" />
+        </a>
+    </div>
+    <div class="product-function action">
+
+      <div class="price"><!--START: ITEMPRICE--> 
+        <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+        <!--END: ITEMPRICE--> 
+        <!--START: SALEPRICE-->
+        <del class="price2">[ITEMPRICE]&nbsp;</del>
+        <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+        <div class="on-sale">[product_sale]</div>
+        <!--END: SALEPRICE-->
+      </div>
+
+      <div class="quickview hidden-xs">
+          <a class="btn-quickview" href="product.asp?itemid=[catalogid]" data-quickview-url="product.asp?lt_c=1&amp;itemid=[catalogid]&amp;qv=1&amp;"><i class="fa fa-eye"></i>
+          </a>
+      </div>
+
+      <button type="button" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+<!--END: ITEM_TEMPLATE_0--> 
+<!--END: CATEGORY_ITEMS--> 
+<!--END: FEATURE_MENU-->
+<div class="right-col col-lg-3">
+  <div class="widget-category">
+    <h4 class="widget_title">Categories</h4>
+    <div class="widget_content">
+      <ul class="menu">
+        <li><a href="http://sandbox-apollotheme8-com.3dcartstores.com/Categories_c_11.html" title="Action Toys & Figures"><i class="fa fa-gamepad" aria-hidden="true"></i>
+Action Toys & Figures</a></li>
+
+        <li><a href="http://sandbox-apollotheme8-com.3dcartstores.com/Men_c_9.html"><i class="fa fa-android" aria-hidden="true"></i>
+ Arts & Crafts</a></li>
+
+        <li><a href="http://sandbox-apollotheme8-com.3dcartstores.com/Women_c_10.html"><i class="fa fa-female" aria-hidden="true"></i>
+ Discovery & Learning</a></li>
+        
+        <li><a href="http://sandbox-apollotheme8-com.3dcartstores.com/Accessories_c_8.html" title="Dolls & Soft Toys"><i class="fa fa-book" aria-hidden="true"></i>
+ Dolls & Soft Toys</a></li>
+        
+        <li><a href="#" title="Games & Puzzles"><i class="fa fa-trophy" aria-hidden="true"></i>
+ Games & Puzzles</a></li>
+        
+        <li><a href="#" title="Collectibles"><i class="fa fa-dribbble" aria-hidden="true"></i>
+Collectibles</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+
+<!--START: CATEGORY_FOOTER-->
+<div class="category-footer" id="homeFooter">[CONTENT]</div>
+<!--END: CATEGORY_FOOTER-->
+</section>
